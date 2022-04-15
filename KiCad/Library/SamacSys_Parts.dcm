@@ -1,0 +1,27 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NE555DR
+D Single Precision Timer
+K
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+$CMP STM32WLE5CCU6
+D STM32WLE5CCU6
+K
+F https://www.mouser.ch/datasheet/2/389/stm32wle5c8-1903151.pdf
+$ENDCMP
+#
+$CMP U.FL-R-SMT-1_10_
+D UFL SMT PCB receptable,DC-6GHz Hirose Straight 50 Surface Mount UFL Connector, Receptacle, Solder Termination Coaxial
+K
+F https://www.hirose.com/product/document?clcode=CL0331-0472-2-10&productname=U.FL-R-SMT-1(10)&series=U.FL&documenttype=2DDrawing&lang=en&documentid=0000940684
+$ENDCMP
+#
+$CMP ADG918BRMZ
+D ADG918BRMZ, RF Switch 2000MHz Single SPDT 34dB Isolation CMOS/LVTTL 1.8, 2.5V 8-Pin MSOP
+K
+F http://www.analog.com/static/imported-files/data_sheets/ADG918_919.pdf
+$ENDCMP
+#
+#End Doc Library

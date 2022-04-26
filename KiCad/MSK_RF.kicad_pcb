@@ -38,6 +38,19 @@
   )
 
   (setup
+    (stackup
+      (layer "F.SilkS" (type "Top Silk Screen"))
+      (layer "F.Paste" (type "Top Solder Paste"))
+      (layer "F.Mask" (type "Top Solder Mask") (thickness 0.01))
+      (layer "F.Cu" (type "copper") (thickness 0.035))
+      (layer "dielectric 1" (type "core") (thickness 1.51) (material "FR4") (epsilon_r 4.5) (loss_tangent 0.02))
+      (layer "B.Cu" (type "copper") (thickness 0.035))
+      (layer "B.Mask" (type "Bottom Solder Mask") (thickness 0.01))
+      (layer "B.Paste" (type "Bottom Solder Paste"))
+      (layer "B.SilkS" (type "Bottom Silk Screen"))
+      (copper_finish "None")
+      (dielectric_constraints no)
+    )
     (pad_to_mask_clearance 0)
     (pcbplotparams
       (layerselection 0x00010fc_ffffffff)
@@ -3407,7 +3420,7 @@
   (via (at 64.5 124.25) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 2) (tstamp 6f6f3c5a-48b3-465c-9206-ca6ca8415603))
   (via (at 86.75 140.75) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 2) (tstamp 715f9ed3-bf1c-4ca3-9476-e01d99a62e0b))
   (via (at 66.5 122.75) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 2) (tstamp 722a87f4-e0bc-4fb1-8f9e-1811c3c78b0e))
-  (via (at 70 127.25) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 2) (tstamp 73c9a884-fbc4-4e1d-9de7-88d1f7d74f68))
+  (via (at 70.25 127.25) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 2) (tstamp 73c9a884-fbc4-4e1d-9de7-88d1f7d74f68))
   (via (at 66.5 125.25) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 2) (tstamp 7465b680-d307-4d73-8f4e-09b82894ab98))
   (via (at 67.25 127.25) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 2) (tstamp 7470071b-da6a-4987-933a-512ca4d10e9f))
   (via (at 86.75 144.5) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 2) (tstamp 74ca376c-aa33-4fd8-ab39-479f71b9c534))
@@ -3477,7 +3490,7 @@
   (via (at 44.25 140.75) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 2) (tstamp bcea20e0-afd2-439c-8964-0d09b2c52afd))
   (via (at 67.75 119.75) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 2) (tstamp bd9397ff-b03c-43ad-a66c-4ef41aa88db5))
   (via (at 74.25 126.25) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 2) (tstamp be2d75bc-a864-411d-8e78-92f048bc2324))
-  (via (at 72.5 110.5) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 2) (tstamp be5d4979-167f-46e4-95cc-d35b6060c5a5))
+  (via (at 72.647746 110.366456) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 2) (tstamp be5d4979-167f-46e4-95cc-d35b6060c5a5))
   (via (at 83 134.75) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 2) (tstamp bf49bfde-1bda-45ea-bc7d-977847880cf7))
   (via (at 63.25 125.25) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 2) (tstamp c0a89172-dbe4-4d6d-adf5-00566f0d960f))
   (via (at 75.75 125.75) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (free) (net 2) (tstamp c0e55d12-b751-43da-b1a3-c5516c60fda0))

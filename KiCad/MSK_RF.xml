@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>C:\Users\Piotr\Desktop\Projekt RF budzyń\Git_repo\STM32WL-board\KiCad\MSK_RF.kicad_sch</source>
-    <date>16.04.2022 19:14:04</date>
+    <date>17.05.2022 10:00:13</date>
     <tool>Eeschema (6.0.4)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -139,7 +139,7 @@
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="MSK_RF.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>fdd5e8ed-3118-47a1-ad0c-e7c4b179e219</tstamps>
+      <tstamps>0a6b69b5-d679-44ae-bcfa-dbe2db696e9d</tstamps>
     </comp>
     <comp ref="C14">
       <value>5.1pF</value>
@@ -267,15 +267,6 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>90f9e15a-282c-4210-bea2-962c4646c4fa</tstamps>
     </comp>
-    <comp ref="C28">
-      <value>4.7nF</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
-      <libsource lib="pspice" part="CAP" description="Capacitor symbol for simulation only"/>
-      <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="MSK_RF.kicad_sch"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamps>81b4104a-4018-4c24-95bc-4f9ce74bb572</tstamps>
-    </comp>
     <comp ref="C29">
       <value>1uF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
@@ -314,42 +305,84 @@
     </comp>
     <comp ref="D1">
       <value>Green LED</value>
-      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <footprint>LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="MSK_RF.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>96fb6b27-25fa-4041-94e6-64f6b0d4a9b1</tstamps>
     </comp>
-    <comp ref="D3">
-      <value>PESD5V0L4UW</value>
-      <footprint>Package_TO_SOT_SMD:SOT-665</footprint>
-      <datasheet>https://assets.nexperia.com/documents/data-sheet/PESDXL4UF_G_W.pdf</datasheet>
-      <libsource lib="Power_Protection" part="PESD5V0L4UW" description="Low capacitance unidirectional quadruple ESD protection diode array, 5.0V, Common Anode, SOT-665"/>
+    <comp ref="D2">
+      <value>ESDALC6V1-1U2</value>
+      <footprint>ESDALC6V11U2</footprint>
+      <datasheet>http://www.st.com/web/en/resource/technical/document/datasheet/CD00212838.pdf</datasheet>
+      <fields>
+        <field name="Description">STMicroelectronics ESDALC6V1-1U2, Uni-Directional TVS Diode, 20W, 2-Pin ST-0201</field>
+        <field name="Height">0</field>
+        <field name="Manufacturer_Name">STMicroelectronics</field>
+        <field name="Manufacturer_Part_Number">ESDALC6V1-1U2</field>
+        <field name="Mouser Part Number">511-ESDALC6V1-1U2</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/STMicroelectronics/ESDALC6V1-1U2?qs=dgCJ4P5xKlbGZPjlSTLhTA%3D%3D</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="ESDALC6V1-1U2" description="STMicroelectronics ESDALC6V1-1U2, Uni-Directional TVS Diode, 20W, 2-Pin ST-0201"/>
+      <property name="Description" value="STMicroelectronics ESDALC6V1-1U2, Uni-Directional TVS Diode, 20W, 2-Pin ST-0201"/>
+      <property name="Height" value="0"/>
+      <property name="Mouser Part Number" value="511-ESDALC6V1-1U2"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/STMicroelectronics/ESDALC6V1-1U2?qs=dgCJ4P5xKlbGZPjlSTLhTA%3D%3D"/>
+      <property name="Manufacturer_Name" value="STMicroelectronics"/>
+      <property name="Manufacturer_Part_Number" value="ESDALC6V1-1U2"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="MSK_RF.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>9720b9c5-910d-482d-8f42-c99c2eac685a</tstamps>
+      <tstamps>bd311d64-9fb4-41ab-9b15-daafc7e1d2b4</tstamps>
+    </comp>
+    <comp ref="D3">
+      <value>ESDALC6V1-1U2</value>
+      <footprint>ESDALC6V11U2</footprint>
+      <datasheet>http://www.st.com/web/en/resource/technical/document/datasheet/CD00212838.pdf</datasheet>
+      <fields>
+        <field name="Description">STMicroelectronics ESDALC6V1-1U2, Uni-Directional TVS Diode, 20W, 2-Pin ST-0201</field>
+        <field name="Height">0</field>
+        <field name="Manufacturer_Name">STMicroelectronics</field>
+        <field name="Manufacturer_Part_Number">ESDALC6V1-1U2</field>
+        <field name="Mouser Part Number">511-ESDALC6V1-1U2</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/STMicroelectronics/ESDALC6V1-1U2?qs=dgCJ4P5xKlbGZPjlSTLhTA%3D%3D</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="ESDALC6V1-1U2" description="STMicroelectronics ESDALC6V1-1U2, Uni-Directional TVS Diode, 20W, 2-Pin ST-0201"/>
+      <property name="Description" value="STMicroelectronics ESDALC6V1-1U2, Uni-Directional TVS Diode, 20W, 2-Pin ST-0201"/>
+      <property name="Height" value="0"/>
+      <property name="Mouser Part Number" value="511-ESDALC6V1-1U2"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/STMicroelectronics/ESDALC6V1-1U2?qs=dgCJ4P5xKlbGZPjlSTLhTA%3D%3D"/>
+      <property name="Manufacturer_Name" value="STMicroelectronics"/>
+      <property name="Manufacturer_Part_Number" value="ESDALC6V1-1U2"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="MSK_RF.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6ac8cc6e-f010-4a41-8d99-06824f00b47e</tstamps>
     </comp>
     <comp ref="D4">
-      <value>PESD5V0L4UW</value>
-      <footprint>Package_TO_SOT_SMD:SOT-665</footprint>
-      <datasheet>https://assets.nexperia.com/documents/data-sheet/PESDXL4UF_G_W.pdf</datasheet>
-      <libsource lib="Power_Protection" part="PESD5V0L4UW" description="Low capacitance unidirectional quadruple ESD protection diode array, 5.0V, Common Anode, SOT-665"/>
+      <value>ESDALC6V1-1U2</value>
+      <footprint>ESDALC6V11U2</footprint>
+      <datasheet>http://www.st.com/web/en/resource/technical/document/datasheet/CD00212838.pdf</datasheet>
+      <fields>
+        <field name="Description">STMicroelectronics ESDALC6V1-1U2, Uni-Directional TVS Diode, 20W, 2-Pin ST-0201</field>
+        <field name="Height">0</field>
+        <field name="Manufacturer_Name">STMicroelectronics</field>
+        <field name="Manufacturer_Part_Number">ESDALC6V1-1U2</field>
+        <field name="Mouser Part Number">511-ESDALC6V1-1U2</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/STMicroelectronics/ESDALC6V1-1U2?qs=dgCJ4P5xKlbGZPjlSTLhTA%3D%3D</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="ESDALC6V1-1U2" description="STMicroelectronics ESDALC6V1-1U2, Uni-Directional TVS Diode, 20W, 2-Pin ST-0201"/>
+      <property name="Description" value="STMicroelectronics ESDALC6V1-1U2, Uni-Directional TVS Diode, 20W, 2-Pin ST-0201"/>
+      <property name="Height" value="0"/>
+      <property name="Mouser Part Number" value="511-ESDALC6V1-1U2"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/STMicroelectronics/ESDALC6V1-1U2?qs=dgCJ4P5xKlbGZPjlSTLhTA%3D%3D"/>
+      <property name="Manufacturer_Name" value="STMicroelectronics"/>
+      <property name="Manufacturer_Part_Number" value="ESDALC6V1-1U2"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="MSK_RF.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>719bf2e0-5e5d-4c1c-a2a4-f786f1849e85</tstamps>
-    </comp>
-    <comp ref="D5">
-      <value>PESD5V0L4UW</value>
-      <footprint>Package_TO_SOT_SMD:SOT-665</footprint>
-      <datasheet>https://assets.nexperia.com/documents/data-sheet/PESDXL4UF_G_W.pdf</datasheet>
-      <libsource lib="Power_Protection" part="PESD5V0L4UW" description="Low capacitance unidirectional quadruple ESD protection diode array, 5.0V, Common Anode, SOT-665"/>
-      <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="MSK_RF.kicad_sch"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamps>cb2d3fca-ae3e-4338-9685-f2580187e206</tstamps>
+      <tstamps>4bc46c44-0630-45c0-9529-43413ab0ce49</tstamps>
     </comp>
     <comp ref="D6">
       <value>Green LED</value>
@@ -370,14 +403,13 @@
       <tstamps>0eb07671-92fe-44fc-b0a3-e3b4926ed504</tstamps>
     </comp>
     <comp ref="J1">
-      <value>Conn_ARM_JTAG_SWD_10</value>
-      <footprint>Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical</footprint>
-      <datasheet>http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf</datasheet>
-      <libsource lib="Connector" part="Conn_ARM_JTAG_SWD_10" description="Cortex Debug Connector, standard ARM Cortex-M SWD and JTAG interface"/>
+      <value>Conn_01x05_Male</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector" part="Conn_01x05_Male" description="Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="MSK_RF.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>0520f108-880d-4bdc-8fc0-e01e0f32b54c</tstamps>
+      <tstamps>c9d8cfeb-d425-42c9-ab0f-f723079d665e</tstamps>
     </comp>
     <comp ref="J2">
       <value>Conn_01x12</value>
@@ -408,13 +440,27 @@
       <tstamps>65a2457a-2c51-40f9-89e2-ade762166cab</tstamps>
     </comp>
     <comp ref="J5">
-      <value>USB_B_Micro</value>
-      <footprint>SamacSys_Parts:47346-0001</footprint>
-      <libsource lib="Connector" part="USB_B_Micro" description="USB Micro Type B connector"/>
+      <value>47346-0001</value>
+      <footprint>47346-0001</footprint>
+      <datasheet>http://www.molex.com/pdm_docs/sd/473460001_sd.pdf</datasheet>
+      <fields>
+        <field name="Description">Micro USB B Receptacle Bottom Mount Assy Molex Right Angle SMT Type B Version 2.0 Micro USB Connector Socket, 30 V ac, 1A 47352 MICRO-USB</field>
+        <field name="Manufacturer_Name">Molex</field>
+        <field name="Manufacturer_Part_Number">47346-0001</field>
+        <field name="Mouser Part Number">538-47346-0001</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Molex/47346-0001?qs=c2CV6XM0DweJBWaSeyWeCw%3D%3D</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="47346-0001" description="Micro USB B Receptacle Bottom Mount Assy Molex Right Angle SMT Type B Version 2.0 Micro USB Connector Socket, 30 V ac, 1A 47352 MICRO-USB"/>
+      <property name="Description" value="Micro USB B Receptacle Bottom Mount Assy Molex Right Angle SMT Type B Version 2.0 Micro USB Connector Socket, 30 V ac, 1A 47352 MICRO-USB"/>
+      <property name="Height" value=""/>
+      <property name="Mouser Part Number" value="538-47346-0001"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Molex/47346-0001?qs=c2CV6XM0DweJBWaSeyWeCw%3D%3D"/>
+      <property name="Manufacturer_Name" value="Molex"/>
+      <property name="Manufacturer_Part_Number" value="47346-0001"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="MSK_RF.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>45b516f3-6a5f-4c47-a463-8df3b425e88e</tstamps>
+      <tstamps>9ac0f4f8-bdb5-4770-9e05-e5e6fdfc0dd3</tstamps>
     </comp>
     <comp ref="JP1">
       <value>Jumper_2_Bridged</value>
@@ -424,24 +470,6 @@
       <property name="Sheetfile" value="MSK_RF.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>a23da91c-f91b-4391-aa54-6f76878bcde2</tstamps>
-    </comp>
-    <comp ref="JP2">
-      <value>Jumper_2_Bridged</value>
-      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
-      <libsource lib="Jumper" part="Jumper_2_Bridged" description="Jumper, 2-pole, closed/bridged"/>
-      <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="MSK_RF.kicad_sch"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamps>a38899ef-2eef-4752-ad6c-f66ec27b4b56</tstamps>
-    </comp>
-    <comp ref="JP3">
-      <value>Jumper_2_Open</value>
-      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
-      <libsource lib="Jumper" part="Jumper_2_Open" description="Jumper, 2-pole, open"/>
-      <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="MSK_RF.kicad_sch"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamps>1d53d850-9b67-44e2-a56b-0d1bcf50aec2</tstamps>
     </comp>
     <comp ref="L1">
       <value>15uH</value>
@@ -497,15 +525,6 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>b764ffe2-f9f5-41d3-88ab-d8989610cfd7</tstamps>
     </comp>
-    <comp ref="R2">
-      <value>1M</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="MSK_RF.kicad_sch"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamps>ea665635-5f54-4fe6-89dd-874e1c51217c</tstamps>
-    </comp>
     <comp ref="R3">
       <value>1k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
@@ -513,7 +532,7 @@
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="MSK_RF.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>963def56-960a-429b-9191-e7322366b96b</tstamps>
+      <tstamps>97f7e21b-0647-4a2b-bd67-48f8ef6a40c8</tstamps>
     </comp>
     <comp ref="R4">
       <value>1k</value>
@@ -578,32 +597,74 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>7abb3635-82b5-435b-a9d1-731ee407c6aa</tstamps>
     </comp>
-    <comp ref="SW1">
-      <value>SW_Push</value>
-      <footprint>SamacSys_Parts:FSM2J_1</footprint>
-      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+    <comp ref="S1">
+      <value>Button FSM2JSMAATR</value>
+      <footprint>FSM2J_1</footprint>
+      <datasheet>http://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&amp;DocId=Customer+Drawing%7F2-1437565-7%7FV%7Fpdf%7FEnglish%7FENG_CD_2-1437565-7_V.pdf%7F2-1437565-9</datasheet>
+      <fields>
+        <field name="Description">Tactile switch,SMT,SPST,raised white act</field>
+        <field name="Manufacturer_Name">TE Connectivity</field>
+        <field name="Manufacturer_Part_Number">FSM2JSMAATR</field>
+        <field name="Mouser Part Number">506-FSM2JSMAATR</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Alcoswitch/FSM2JSMAATR?qs=g%252BEszo6zu8MKdISiZRITCQ%3D%3D</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="FSM2JSMAATR" description="Tactile switch,SMT,SPST,raised white act"/>
+      <property name="Description" value="Tactile switch,SMT,SPST,raised white act"/>
+      <property name="Height" value=""/>
+      <property name="Mouser Part Number" value="506-FSM2JSMAATR"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Alcoswitch/FSM2JSMAATR?qs=g%252BEszo6zu8MKdISiZRITCQ%3D%3D"/>
+      <property name="Manufacturer_Name" value="TE Connectivity"/>
+      <property name="Manufacturer_Part_Number" value="FSM2JSMAATR"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="MSK_RF.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>dc9c890e-59f8-4de1-9d15-359d2450fc3e</tstamps>
+      <tstamps>93e0ed37-b598-4efc-8c56-7e1adb523f89</tstamps>
     </comp>
-    <comp ref="SW2">
-      <value>SW_Push</value>
-      <footprint>SamacSys_Parts:FSM2J_1</footprint>
-      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+    <comp ref="S2">
+      <value>Button FSM2JSMAATR</value>
+      <footprint>FSM2J_1</footprint>
+      <datasheet>http://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&amp;DocId=Customer+Drawing%7F2-1437565-7%7FV%7Fpdf%7FEnglish%7FENG_CD_2-1437565-7_V.pdf%7F2-1437565-9</datasheet>
+      <fields>
+        <field name="Description">Tactile switch,SMT,SPST,raised white act</field>
+        <field name="Manufacturer_Name">TE Connectivity</field>
+        <field name="Manufacturer_Part_Number">FSM2JSMAATR</field>
+        <field name="Mouser Part Number">506-FSM2JSMAATR</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Alcoswitch/FSM2JSMAATR?qs=g%252BEszo6zu8MKdISiZRITCQ%3D%3D</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="FSM2JSMAATR" description="Tactile switch,SMT,SPST,raised white act"/>
+      <property name="Description" value="Tactile switch,SMT,SPST,raised white act"/>
+      <property name="Height" value=""/>
+      <property name="Mouser Part Number" value="506-FSM2JSMAATR"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Alcoswitch/FSM2JSMAATR?qs=g%252BEszo6zu8MKdISiZRITCQ%3D%3D"/>
+      <property name="Manufacturer_Name" value="TE Connectivity"/>
+      <property name="Manufacturer_Part_Number" value="FSM2JSMAATR"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="MSK_RF.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>b935f55e-e8ff-4fab-b87a-da4f920dcba4</tstamps>
+      <tstamps>6d060392-2756-41af-8b51-90e2d874dc31</tstamps>
     </comp>
-    <comp ref="SW3">
-      <value>SW_Push</value>
-      <footprint>SamacSys_Parts:FSM2J_1</footprint>
-      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+    <comp ref="S3">
+      <value>Button FSM2JSMAATR</value>
+      <footprint>FSM2J_1</footprint>
+      <datasheet>http://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&amp;DocId=Customer+Drawing%7F2-1437565-7%7FV%7Fpdf%7FEnglish%7FENG_CD_2-1437565-7_V.pdf%7F2-1437565-9</datasheet>
+      <fields>
+        <field name="Description">Tactile switch,SMT,SPST,raised white act</field>
+        <field name="Manufacturer_Name">TE Connectivity</field>
+        <field name="Manufacturer_Part_Number">FSM2JSMAATR</field>
+        <field name="Mouser Part Number">506-FSM2JSMAATR</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Alcoswitch/FSM2JSMAATR?qs=g%252BEszo6zu8MKdISiZRITCQ%3D%3D</field>
+      </fields>
+      <libsource lib="SamacSys_Parts" part="FSM2JSMAATR" description="Tactile switch,SMT,SPST,raised white act"/>
+      <property name="Description" value="Tactile switch,SMT,SPST,raised white act"/>
+      <property name="Height" value=""/>
+      <property name="Mouser Part Number" value="506-FSM2JSMAATR"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Alcoswitch/FSM2JSMAATR?qs=g%252BEszo6zu8MKdISiZRITCQ%3D%3D"/>
+      <property name="Manufacturer_Name" value="TE Connectivity"/>
+      <property name="Manufacturer_Part_Number" value="FSM2JSMAATR"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="MSK_RF.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>5a68896d-8653-4d31-a31e-41073fb87869</tstamps>
+      <tstamps>262ba0e1-54ff-40dd-88cb-40c1af0bc561</tstamps>
     </comp>
     <comp ref="U1">
       <value>STM32WLE5CCU6</value>
@@ -612,7 +673,7 @@
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="MSK_RF.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>e143bd20-09e1-4c86-aef0-ee2793ca09cd 86a0c557-6211-4111-a6fa-5f37d71e9155 303af3cd-c8df-4cf4-a39b-20983e0ed05f a06753cf-27ea-4d55-8cee-c1be2b13ea71 2291af07-bf79-445f-9f78-491833583666</tstamps>
+      <tstamps>e143bd20-09e1-4c86-aef0-ee2793ca09cd 86a0c557-6211-4111-a6fa-5f37d71e9155 a06753cf-27ea-4d55-8cee-c1be2b13ea71 303af3cd-c8df-4cf4-a39b-20983e0ed05f 2291af07-bf79-445f-9f78-491833583666</tstamps>
     </comp>
     <comp ref="U2">
       <value>ADG918BRM</value>
@@ -645,7 +706,7 @@
     </comp>
     <comp ref="Y2">
       <value>ECS-320-8-37-CKM-TR3</value>
-      <footprint>ECS320837CKMTR3</footprint>
+      <footprint>SamacSys_Parts:ECS320837CKMTR3</footprint>
       <fields>
         <field name="Description">Crystals 32.000 MHz, CL 8 pF TOL +/-10 ppm, STAB +/-10 ppm, -20 +70 C ECX-1637 2.0x1.6 mm ESR 60O RoHS</field>
         <field name="Height">0.55</field>
@@ -668,28 +729,23 @@
     </comp>
   </components>
   <libparts>
-    <libpart lib="Connector" part="Conn_ARM_JTAG_SWD_10">
-      <description>Cortex Debug Connector, standard ARM Cortex-M SWD and JTAG interface</description>
-      <docs>http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf</docs>
+    <libpart lib="Connector" part="Conn_01x05_Male">
+      <description>Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
       <footprints>
-        <fp>PinHeader?2x05?P1.27mm*</fp>
+        <fp>Connector*:*_1x??_*</fp>
       </footprints>
       <fields>
         <field name="Reference">J</field>
-        <field name="Value">Conn_ARM_JTAG_SWD_10</field>
-        <field name="Datasheet">http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf</field>
+        <field name="Value">Conn_01x05_Male</field>
+        <field name="Datasheet">~</field>
       </fields>
       <pins>
-        <pin num="1" name="VTref" type="power_in"/>
-        <pin num="2" name="SWDIO/TMS" type="bidirectional"/>
-        <pin num="3" name="GND" type="power_in"/>
-        <pin num="4" name="SWDCLK/TCK" type="output"/>
-        <pin num="5" name="GND" type="passive"/>
-        <pin num="6" name="SWO/TDO" type="input"/>
-        <pin num="7" name="KEY" type="no_connect"/>
-        <pin num="8" name="NC/TDI" type="output"/>
-        <pin num="9" name="GNDDetect" type="passive"/>
-        <pin num="10" name="~{RESET}" type="open_collector"/>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Connector" part="Conn_Coaxial">
@@ -711,26 +767,6 @@
       <pins>
         <pin num="1" name="In" type="passive"/>
         <pin num="2" name="Ext" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="Connector" part="USB_B_Micro">
-      <description>USB Micro Type B connector</description>
-      <docs>~</docs>
-      <footprints>
-        <fp>USB*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">J</field>
-        <field name="Value">USB_B_Micro</field>
-        <field name="Datasheet">~</field>
-      </fields>
-      <pins>
-        <pin num="1" name="VBUS" type="power_out"/>
-        <pin num="2" name="D-" type="bidirectional"/>
-        <pin num="3" name="D+" type="bidirectional"/>
-        <pin num="4" name="ID" type="passive"/>
-        <pin num="5" name="GND" type="power_out"/>
-        <pin num="6" name="Shield" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Connector_Generic" part="Conn_01x12">
@@ -862,44 +898,6 @@
         <pin num="2" name="B" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="Jumper" part="Jumper_2_Open">
-      <description>Jumper, 2-pole, open</description>
-      <docs>~</docs>
-      <footprints>
-        <fp>Jumper*</fp>
-        <fp>TestPoint*2Pads*</fp>
-        <fp>TestPoint*Bridge*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">JP</field>
-        <field name="Value">Jumper_2_Open</field>
-        <field name="Datasheet">~</field>
-      </fields>
-      <pins>
-        <pin num="1" name="A" type="passive"/>
-        <pin num="2" name="B" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="Power_Protection" part="PESD5V0L4UW">
-      <description>Low capacitance unidirectional quadruple ESD protection diode array, 5.0V, Common Anode, SOT-665</description>
-      <docs>https://assets.nexperia.com/documents/data-sheet/PESDXL4UF_G_W.pdf</docs>
-      <footprints>
-        <fp>SOT?665*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">D</field>
-        <field name="Value">PESD5V0L4UW</field>
-        <field name="Footprint">Package_TO_SOT_SMD:SOT-665</field>
-        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/PESDXL4UF_G_W.pdf</field>
-      </fields>
-      <pins>
-        <pin num="1" name="K1" type="passive"/>
-        <pin num="2" name="A" type="passive"/>
-        <pin num="3" name="K2" type="passive"/>
-        <pin num="4" name="K3" type="passive"/>
-        <pin num="5" name="K4" type="passive"/>
-      </pins>
-    </libpart>
     <libpart lib="RF_Switch" part="ADG918BRM">
       <description>SPDT DC-4GHz absorbative switch, 43dB isolation at 1GHz, MSOP-8</description>
       <docs>https://www.analog.com/media/en/technical-documentation/data-sheets/ADG918_919.pdf</docs>
@@ -1001,6 +999,28 @@
         <pin num="49" name="VSS" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="SamacSys_Parts" part="47346-0001">
+      <description>Micro USB B Receptacle Bottom Mount Assy Molex Right Angle SMT Type B Version 2.0 Micro USB Connector Socket, 30 V ac, 1A 47352 MICRO-USB</description>
+      <docs>http://www.molex.com/pdm_docs/sd/473460001_sd.pdf</docs>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">47346-0001</field>
+        <field name="Footprint">47346-0001</field>
+        <field name="Datasheet">http://www.molex.com/pdm_docs/sd/473460001_sd.pdf</field>
+        <field name="Description">Micro USB B Receptacle Bottom Mount Assy Molex Right Angle SMT Type B Version 2.0 Micro USB Connector Socket, 30 V ac, 1A 47352 MICRO-USB</field>
+        <field name="Mouser Part Number">538-47346-0001</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Molex/47346-0001?qs=c2CV6XM0DweJBWaSeyWeCw%3D%3D</field>
+        <field name="Manufacturer_Name">Molex</field>
+        <field name="Manufacturer_Part_Number">47346-0001</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VBUS" type="passive"/>
+        <pin num="2" name="D-" type="passive"/>
+        <pin num="3" name="D+" type="passive"/>
+        <pin num="4" name="ID" type="passive"/>
+        <pin num="5" name="GND" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="SamacSys_Parts" part="ECS-320-8-37-CKM-TR3">
       <description>Crystals 32.000 MHz, CL 8 pF TOL +/-10 ppm, STAB +/-10 ppm, -20 +70 C ECX-1637 2.0x1.6 mm ESR 60O RoHS</description>
       <fields>
@@ -1021,17 +1041,45 @@
         <pin num="4" name="GND_2" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="Switch" part="SW_Push">
-      <description>Push button switch, generic, two pins</description>
-      <docs>~</docs>
+    <libpart lib="SamacSys_Parts" part="ESDALC6V1-1U2">
+      <description>STMicroelectronics ESDALC6V1-1U2, Uni-Directional TVS Diode, 20W, 2-Pin ST-0201</description>
+      <docs>http://www.st.com/web/en/resource/technical/document/datasheet/CD00212838.pdf</docs>
       <fields>
-        <field name="Reference">SW</field>
-        <field name="Value">SW_Push</field>
-        <field name="Datasheet">~</field>
+        <field name="Reference">D</field>
+        <field name="Value">ESDALC6V1-1U2</field>
+        <field name="Footprint">ESDALC6V11U2</field>
+        <field name="Datasheet">http://www.st.com/web/en/resource/technical/document/datasheet/CD00212838.pdf</field>
+        <field name="Description">STMicroelectronics ESDALC6V1-1U2, Uni-Directional TVS Diode, 20W, 2-Pin ST-0201</field>
+        <field name="Height">0</field>
+        <field name="Mouser Part Number">511-ESDALC6V1-1U2</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/STMicroelectronics/ESDALC6V1-1U2?qs=dgCJ4P5xKlbGZPjlSTLhTA%3D%3D</field>
+        <field name="Manufacturer_Name">STMicroelectronics</field>
+        <field name="Manufacturer_Part_Number">ESDALC6V1-1U2</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SamacSys_Parts" part="FSM2JSMAATR">
+      <description>Tactile switch,SMT,SPST,raised white act</description>
+      <docs>http://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&amp;DocId=Customer+Drawing%7F2-1437565-7%7FV%7Fpdf%7FEnglish%7FENG_CD_2-1437565-7_V.pdf%7F2-1437565-9</docs>
+      <fields>
+        <field name="Reference">S</field>
+        <field name="Value">FSM2JSMAATR</field>
+        <field name="Footprint">FSM2J_1</field>
+        <field name="Datasheet">http://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&amp;DocId=Customer+Drawing%7F2-1437565-7%7FV%7Fpdf%7FEnglish%7FENG_CD_2-1437565-7_V.pdf%7F2-1437565-9</field>
+        <field name="Description">Tactile switch,SMT,SPST,raised white act</field>
+        <field name="Mouser Part Number">506-FSM2JSMAATR</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Alcoswitch/FSM2JSMAATR?qs=g%252BEszo6zu8MKdISiZRITCQ%3D%3D</field>
+        <field name="Manufacturer_Name">TE Connectivity</field>
+        <field name="Manufacturer_Part_Number">FSM2JSMAATR</field>
       </fields>
       <pins>
         <pin num="1" name="1" type="passive"/>
         <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="pspice" part="CAP">
@@ -1061,9 +1109,6 @@
     <library logical="Jumper">
       <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Jumper.kicad_sym</uri>
     </library>
-    <library logical="Power_Protection">
-      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Power_Protection.kicad_sym</uri>
-    </library>
     <library logical="RF_Switch">
       <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/RF_Switch.kicad_sym</uri>
     </library>
@@ -1075,9 +1120,6 @@
     </library>
     <library logical="SamacSys_Parts">
       <uri>C:/Users/Piotr/Desktop/Projekt RF budzyń/KiCad/MSK_RF/Library/SamacSys_Parts.lib</uri>
-    </library>
-    <library logical="Switch">
-      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Switch.kicad_sym</uri>
     </library>
     <library logical="pspice">
       <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/pspice.kicad_sym</uri>
@@ -1108,8 +1150,9 @@
       <node ref="C30" pin="2" pintype="passive"/>
       <node ref="C4" pin="1" pintype="passive"/>
       <node ref="C5" pin="1" pintype="passive"/>
-      <node ref="J1" pin="1" pinfunction="VTref" pintype="power_in"/>
+      <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive"/>
       <node ref="J2" pin="7" pinfunction="Pin_7" pintype="passive"/>
+      <node ref="J3" pin="1" pinfunction="Pin_1" pintype="passive"/>
       <node ref="R5" pin="2" pintype="passive"/>
       <node ref="U1" pin="11" pinfunction="VDD_1" pintype="passive"/>
       <node ref="U1" pin="28" pinfunction="VDDRF" pintype="passive"/>
@@ -1120,14 +1163,15 @@
       <node ref="U3" pin="5" pinfunction="OUT" pintype="power_out"/>
     </net>
     <net code="5" name="FE_CTRL">
+      <node ref="C32" pin="2" pintype="passive"/>
       <node ref="J2" pin="9" pinfunction="Pin_9" pintype="passive"/>
-      <node ref="JP3" pin="2" pinfunction="B" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
     </net>
     <net code="6" name="GND">
       <node ref="C1" pin="2" pintype="passive"/>
       <node ref="C10" pin="1" pintype="passive"/>
       <node ref="C12" pin="1" pintype="passive"/>
-      <node ref="C13" pin="1" pintype="passive"/>
+      <node ref="C13" pin="2" pintype="passive"/>
       <node ref="C15" pin="1" pintype="passive"/>
       <node ref="C17" pin="1" pintype="passive"/>
       <node ref="C18" pin="1" pintype="passive"/>
@@ -1137,10 +1181,9 @@
       <node ref="C21" pin="1" pintype="passive"/>
       <node ref="C22" pin="1" pintype="passive"/>
       <node ref="C23" pin="2" pintype="passive"/>
-      <node ref="C25" pin="1" pintype="passive"/>
+      <node ref="C25" pin="2" pintype="passive"/>
       <node ref="C26" pin="1" pintype="passive"/>
       <node ref="C27" pin="1" pintype="passive"/>
-      <node ref="C28" pin="2" pintype="passive"/>
       <node ref="C29" pin="1" pintype="passive"/>
       <node ref="C3" pin="2" pintype="passive"/>
       <node ref="C30" pin="1" pintype="passive"/>
@@ -1153,22 +1196,24 @@
       <node ref="C8" pin="1" pintype="passive"/>
       <node ref="C9" pin="2" pintype="passive"/>
       <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D2" pin="2" pintype="passive"/>
+      <node ref="D3" pin="2" pintype="passive"/>
+      <node ref="D4" pin="2" pintype="passive"/>
       <node ref="D6" pin="1" pinfunction="K" pintype="passive"/>
       <node ref="D7" pin="1" pinfunction="K" pintype="passive"/>
-      <node ref="J1" pin="3" pinfunction="GND" pintype="power_in"/>
-      <node ref="J1" pin="5" pinfunction="GND" pintype="passive"/>
-      <node ref="J1" pin="9" pinfunction="GNDDetect" pintype="passive"/>
+      <node ref="J1" pin="5" pinfunction="Pin_5" pintype="passive"/>
       <node ref="J2" pin="8" pinfunction="Pin_8" pintype="passive"/>
-      <node ref="J3" pin="4" pinfunction="Pin_4" pintype="passive"/>
-      <node ref="J3" pin="5" pinfunction="Pin_5" pintype="passive"/>
       <node ref="J3" pin="6" pinfunction="Pin_6" pintype="passive"/>
       <node ref="J4" pin="2" pinfunction="Ext" pintype="passive"/>
-      <node ref="J5" pin="5" pinfunction="GND" pintype="power_out"/>
-      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="J5" pin="5" pinfunction="GND" pintype="passive"/>
       <node ref="R6" pin="2" pintype="passive"/>
       <node ref="R8" pin="1" pintype="passive"/>
-      <node ref="U1" pin="14" pinfunction="PA6" pintype="passive"/>
-      <node ref="U1" pin="32" pinfunction="PB12" pintype="passive"/>
+      <node ref="S1" pin="3" pinfunction="3" pintype="passive"/>
+      <node ref="S1" pin="4" pinfunction="4" pintype="passive"/>
+      <node ref="S2" pin="3" pinfunction="3" pintype="passive"/>
+      <node ref="S2" pin="4" pinfunction="4" pintype="passive"/>
+      <node ref="S3" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="S3" pin="2" pinfunction="2" pintype="passive"/>
       <node ref="U1" pin="48" pinfunction="VSSSMPS" pintype="passive"/>
       <node ref="U1" pin="49" pinfunction="VSS" pintype="passive"/>
       <node ref="U2" pin="3" pinfunction="GND" pintype="power_in"/>
@@ -1180,10 +1225,11 @@
     </net>
     <net code="7" name="NRST">
       <node ref="C27" pin="2" pintype="passive"/>
-      <node ref="D5" pin="1" pinfunction="K1" pintype="passive"/>
-      <node ref="J1" pin="10" pinfunction="~{RESET}" pintype="open_collector"/>
+      <node ref="D4" pin="1" pintype="passive"/>
+      <node ref="J1" pin="4" pinfunction="Pin_4" pintype="passive"/>
       <node ref="J2" pin="6" pinfunction="Pin_6" pintype="passive"/>
-      <node ref="SW3" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="S3" pin="3" pinfunction="3" pintype="passive"/>
+      <node ref="S3" pin="4" pinfunction="4" pintype="passive"/>
       <node ref="U1" pin="18" pinfunction="NRST" pintype="passive"/>
     </net>
     <net code="8" name="Net-(C1-Pad1)">
@@ -1225,10 +1271,12 @@
       <node ref="C11" pin="2" pintype="passive"/>
       <node ref="U2" pin="8" pinfunction="RF1" pintype="passive"/>
     </net>
-    <net code="15" name="Net-(C13-Pad2)">
-      <node ref="C13" pin="2" pintype="passive"/>
-      <node ref="D3" pin="2" pinfunction="A" pintype="passive"/>
-      <node ref="SW1" pin="2" pinfunction="2" pintype="passive"/>
+    <net code="15" name="Net-(C13-Pad1)">
+      <node ref="C13" pin="1" pintype="passive"/>
+      <node ref="D2" pin="1" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="S1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="S1" pin="2" pinfunction="2" pintype="passive"/>
     </net>
     <net code="16" name="Net-(C14-Pad1)">
       <node ref="C14" pin="1" pintype="passive"/>
@@ -1254,198 +1302,170 @@
       <node ref="C24" pin="2" pintype="passive"/>
       <node ref="U2" pin="4" pinfunction="RFC" pintype="passive"/>
     </net>
-    <net code="21" name="Net-(C25-Pad2)">
-      <node ref="C25" pin="2" pintype="passive"/>
-      <node ref="D4" pin="2" pinfunction="A" pintype="passive"/>
-      <node ref="SW2" pin="2" pinfunction="2" pintype="passive"/>
+    <net code="21" name="Net-(C25-Pad1)">
+      <node ref="C25" pin="1" pintype="passive"/>
+      <node ref="D3" pin="1" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="S2" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="S2" pin="2" pinfunction="2" pintype="passive"/>
     </net>
     <net code="22" name="Net-(C26-Pad2)">
       <node ref="C26" pin="2" pintype="passive"/>
       <node ref="L6" pin="2" pinfunction="2" pintype="passive"/>
       <node ref="U2" pin="5" pinfunction="RF2" pintype="passive"/>
     </net>
-    <net code="23" name="Net-(C28-Pad1)">
-      <node ref="C28" pin="1" pintype="passive"/>
-      <node ref="J5" pin="6" pinfunction="Shield" pintype="passive"/>
-      <node ref="R2" pin="2" pintype="passive"/>
-    </net>
-    <net code="24" name="Net-(C29-Pad2)">
+    <net code="23" name="Net-(C29-Pad2)">
       <node ref="C29" pin="2" pintype="passive"/>
-      <node ref="J5" pin="1" pinfunction="VBUS" pintype="power_out"/>
+      <node ref="J5" pin="1" pinfunction="VBUS" pintype="passive"/>
       <node ref="R10" pin="1" pintype="passive"/>
       <node ref="U3" pin="1" pinfunction="IN" pintype="power_in"/>
       <node ref="U3" pin="3" pinfunction="EN" pintype="input"/>
     </net>
-    <net code="25" name="Net-(C32-Pad2)">
-      <node ref="C32" pin="2" pintype="passive"/>
-      <node ref="JP2" pin="1" pinfunction="A" pintype="passive"/>
-      <node ref="JP3" pin="1" pinfunction="A" pintype="passive"/>
-      <node ref="R7" pin="1" pintype="passive"/>
-    </net>
-    <net code="26" name="Net-(D1-Pad2)">
+    <net code="24" name="Net-(D1-Pad2)">
       <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="R1" pin="2" pintype="passive"/>
     </net>
-    <net code="27" name="Net-(D3-Pad1)">
-      <node ref="D3" pin="1" pinfunction="K1" pintype="passive"/>
-      <node ref="R3" pin="2" pintype="passive"/>
-      <node ref="SW1" pin="1" pinfunction="1" pintype="passive"/>
-    </net>
-    <net code="28" name="Net-(D4-Pad1)">
-      <node ref="D4" pin="1" pinfunction="K1" pintype="passive"/>
-      <node ref="R4" pin="2" pintype="passive"/>
-      <node ref="SW2" pin="1" pinfunction="1" pintype="passive"/>
-    </net>
-    <net code="29" name="Net-(D5-Pad2)">
-      <node ref="D5" pin="2" pinfunction="A" pintype="passive"/>
-      <node ref="SW3" pin="1" pinfunction="1" pintype="passive"/>
-    </net>
-    <net code="30" name="Net-(D6-Pad2)">
+    <net code="25" name="Net-(D6-Pad2)">
       <node ref="D6" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="R9" pin="2" pintype="passive"/>
     </net>
-    <net code="31" name="Net-(D7-Pad2)">
+    <net code="26" name="Net-(D7-Pad2)">
       <node ref="D7" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="R10" pin="2" pintype="passive"/>
     </net>
-    <net code="32" name="Net-(JP1-Pad1)">
+    <net code="27" name="Net-(JP1-Pad1)">
       <node ref="JP1" pin="1" pinfunction="A" pintype="passive"/>
       <node ref="U1" pin="19" pinfunction="PH3-BOOT0" pintype="passive"/>
     </net>
-    <net code="33" name="Net-(JP1-Pad2)">
+    <net code="28" name="Net-(JP1-Pad2)">
       <node ref="JP1" pin="2" pinfunction="B" pintype="passive"/>
       <node ref="R8" pin="2" pintype="passive"/>
     </net>
-    <net code="34" name="Net-(L1-Pad2)">
+    <net code="29" name="Net-(L1-Pad2)">
       <node ref="L1" pin="2" pinfunction="2" pintype="passive"/>
       <node ref="U1" pin="47" pinfunction="VLXSMPS" pintype="passive"/>
     </net>
-    <net code="35" name="Net-(R7-Pad2)">
+    <net code="30" name="Net-(R7-Pad2)">
       <node ref="R7" pin="2" pintype="passive"/>
       <node ref="U2" pin="2" pinfunction="CTRL" pintype="input"/>
     </net>
-    <net code="36" name="Net-(U1-Pad26)">
+    <net code="31" name="Net-(U1-Pad26)">
       <node ref="U1" pin="26" pinfunction="OSC_IN" pintype="passive"/>
       <node ref="Y2" pin="3" pinfunction="OUT/IN" pintype="passive"/>
     </net>
-    <net code="37" name="Net-(U1-Pad27)">
+    <net code="32" name="Net-(U1-Pad27)">
       <node ref="U1" pin="27" pinfunction="OSC_OUT" pintype="passive"/>
       <node ref="Y2" pin="1" pinfunction="IN/OUT" pintype="passive"/>
     </net>
-    <net code="38" name="PA0">
+    <net code="33" name="PA0">
       <node ref="J3" pin="2" pinfunction="Pin_2" pintype="passive"/>
       <node ref="R3" pin="1" pintype="passive"/>
       <node ref="U1" pin="7" pinfunction="PA0" pintype="passive"/>
     </net>
-    <net code="39" name="PA1">
+    <net code="34" name="PA1">
       <node ref="J3" pin="3" pinfunction="Pin_3" pintype="passive"/>
       <node ref="R4" pin="1" pintype="passive"/>
       <node ref="U1" pin="8" pinfunction="PA1" pintype="passive"/>
     </net>
-    <net code="40" name="PA2">
+    <net code="35" name="PA2">
       <node ref="J3" pin="7" pinfunction="Pin_7" pintype="passive"/>
       <node ref="U1" pin="9" pinfunction="PA2" pintype="passive"/>
     </net>
-    <net code="41" name="PA3">
+    <net code="36" name="PA3">
       <node ref="J3" pin="8" pinfunction="Pin_8" pintype="passive"/>
       <node ref="U1" pin="10" pinfunction="PA3" pintype="passive"/>
     </net>
-    <net code="42" name="PA4">
+    <net code="37" name="PA4">
       <node ref="J3" pin="9" pinfunction="Pin_9" pintype="passive"/>
       <node ref="U1" pin="12" pinfunction="PA4" pintype="passive"/>
     </net>
-    <net code="43" name="PA5">
+    <net code="38" name="PA5">
       <node ref="J3" pin="10" pinfunction="Pin_10" pintype="passive"/>
       <node ref="U1" pin="13" pinfunction="PA5" pintype="passive"/>
     </net>
-    <net code="44" name="PA7">
+    <net code="39" name="PA6">
+      <node ref="J3" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="U1" pin="14" pinfunction="PA6" pintype="passive"/>
+    </net>
+    <net code="40" name="PA7">
       <node ref="J3" pin="11" pinfunction="Pin_11" pintype="passive"/>
       <node ref="U1" pin="15" pinfunction="PA7" pintype="passive"/>
     </net>
-    <net code="45" name="PA8">
+    <net code="41" name="PA8">
       <node ref="J2" pin="12" pinfunction="Pin_12" pintype="passive"/>
       <node ref="U1" pin="16" pinfunction="PA8" pintype="passive"/>
     </net>
-    <net code="46" name="PA9">
+    <net code="42" name="PA9">
       <node ref="J2" pin="4" pinfunction="Pin_4" pintype="passive"/>
       <node ref="U1" pin="17" pinfunction="PA9" pintype="passive"/>
     </net>
-    <net code="47" name="PA10">
+    <net code="43" name="PA10">
       <node ref="J2" pin="3" pinfunction="Pin_3" pintype="passive"/>
       <node ref="U1" pin="33" pinfunction="PA10" pintype="passive"/>
     </net>
-    <net code="48" name="PA11">
+    <net code="44" name="PA11">
       <node ref="J3" pin="12" pinfunction="Pin_12" pintype="passive"/>
       <node ref="U1" pin="34" pinfunction="PA11" pintype="passive"/>
     </net>
-    <net code="49" name="PA12">
+    <net code="45" name="PA12">
       <node ref="U1" pin="35" pinfunction="PA12" pintype="passive"/>
     </net>
-    <net code="50" name="PA13">
-      <node ref="J1" pin="2" pinfunction="SWDIO/TMS" pintype="bidirectional"/>
+    <net code="46" name="PA13">
+      <node ref="J1" pin="2" pinfunction="Pin_2" pintype="passive"/>
       <node ref="J2" pin="2" pinfunction="Pin_2" pintype="passive"/>
       <node ref="U1" pin="36" pinfunction="PA13" pintype="passive"/>
     </net>
-    <net code="51" name="PA14">
-      <node ref="J1" pin="4" pinfunction="SWDCLK/TCK" pintype="output"/>
+    <net code="47" name="PA14">
+      <node ref="J1" pin="3" pinfunction="Pin_3" pintype="passive"/>
       <node ref="J2" pin="1" pinfunction="Pin_1" pintype="passive"/>
       <node ref="U1" pin="42" pinfunction="PA14" pintype="passive"/>
     </net>
-    <net code="52" name="PA15">
+    <net code="48" name="PA15">
       <node ref="R9" pin="1" pintype="passive"/>
       <node ref="U1" pin="43" pinfunction="PA15" pintype="passive"/>
     </net>
-    <net code="53" name="PB2">
+    <net code="49" name="PB2">
       <node ref="J2" pin="5" pinfunction="Pin_5" pintype="passive"/>
       <node ref="U1" pin="31" pinfunction="PB2" pintype="passive"/>
     </net>
-    <net code="54" name="PB4">
+    <net code="50" name="PB4">
       <node ref="R1" pin="1" pintype="passive"/>
       <node ref="U1" pin="2" pinfunction="PB4" pintype="passive"/>
     </net>
-    <net code="55" name="PB6">
+    <net code="51" name="PB6">
       <node ref="J2" pin="11" pinfunction="Pin_11" pintype="passive"/>
       <node ref="U1" pin="4" pinfunction="PB6" pintype="passive"/>
     </net>
-    <net code="56" name="PB7">
+    <net code="52" name="PB7">
       <node ref="J2" pin="10" pinfunction="Pin_10" pintype="passive"/>
       <node ref="U1" pin="5" pinfunction="PB7" pintype="passive"/>
     </net>
-    <net code="57" name="PB8">
+    <net code="53" name="PB8">
       <node ref="U1" pin="6" pinfunction="PB8" pintype="passive"/>
     </net>
-    <net code="58" name="PC13">
-      <node ref="JP2" pin="2" pinfunction="B" pintype="passive"/>
+    <net code="54" name="PB12">
+      <node ref="J3" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="U1" pin="32" pinfunction="PB12" pintype="passive"/>
+    </net>
+    <net code="55" name="PC13">
       <node ref="U1" pin="38" pinfunction="PC13" pintype="passive"/>
     </net>
-    <net code="59" name="unconnected-(J1-Pad6)">
-      <node ref="J1" pin="6" pinfunction="SWO/TDO" pintype="input+no_connect"/>
+    <net code="56" name="unconnected-(J5-Pad2)">
+      <node ref="J5" pin="2" pinfunction="D-" pintype="passive+no_connect"/>
     </net>
-    <net code="60" name="unconnected-(J1-Pad7)">
-      <node ref="J1" pin="7" pinfunction="KEY" pintype="no_connect"/>
+    <net code="57" name="unconnected-(J5-Pad3)">
+      <node ref="J5" pin="3" pinfunction="D+" pintype="passive+no_connect"/>
     </net>
-    <net code="61" name="unconnected-(J1-Pad8)">
-      <node ref="J1" pin="8" pinfunction="NC/TDI" pintype="output+no_connect"/>
-    </net>
-    <net code="62" name="unconnected-(J3-Pad1)">
-      <node ref="J3" pin="1" pinfunction="Pin_1" pintype="passive+no_connect"/>
-    </net>
-    <net code="63" name="unconnected-(J5-Pad2)">
-      <node ref="J5" pin="2" pinfunction="D-" pintype="bidirectional+no_connect"/>
-    </net>
-    <net code="64" name="unconnected-(J5-Pad3)">
-      <node ref="J5" pin="3" pinfunction="D+" pintype="bidirectional+no_connect"/>
-    </net>
-    <net code="65" name="unconnected-(J5-Pad4)">
+    <net code="58" name="unconnected-(J5-Pad4)">
       <node ref="J5" pin="4" pinfunction="ID" pintype="passive+no_connect"/>
     </net>
-    <net code="66" name="unconnected-(U1-Pad22)">
+    <net code="59" name="unconnected-(U1-Pad22)">
       <node ref="U1" pin="22" pinfunction="RFO_LP" pintype="passive+no_connect"/>
     </net>
-    <net code="67" name="unconnected-(U1-Pad30)">
+    <net code="60" name="unconnected-(U1-Pad30)">
       <node ref="U1" pin="30" pinfunction="PB0-VDD_TCXO" pintype="passive+no_connect"/>
     </net>
-    <net code="68" name="unconnected-(U3-Pad4)">
+    <net code="61" name="unconnected-(U3-Pad4)">
       <node ref="U3" pin="4" pinfunction="NC" pintype="no_connect"/>
     </net>
   </nets>

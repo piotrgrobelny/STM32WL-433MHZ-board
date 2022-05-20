@@ -11,7 +11,7 @@ STM32WLE5CCU6 with single code Cortex-M4 256KB Flash and 64KB RAM is used. The p
 - Two user buttons
 - Two user leds
 - Voltage regulator based on TLV70233
-- Dimensions 5,2cm x 7,3cm
+- Dimensions 5.2cm x 7.3cm
 
 ## Files description 
 - `Board photos` 3D renders and PCB signal paths
